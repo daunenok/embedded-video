@@ -1,0 +1,1 @@
+Clone of a YouTube video page. It is made for The Odin Project: Embedding Images and Video - exercise.

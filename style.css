@@ -1,0 +1,377 @@
+body {
+	font-family: arial, sans-serif;
+	color: #a6a6a6;
+	background-color: #F1F1F1;
+}
+a {
+	text-decoration: none!important;	
+}
+strong {
+	font-weight: bold;
+}
+
+/* header ----------------------------------------*/
+
+header {
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	padding: 15px 40px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+header img {
+	margin-left: 15px;
+	vertical-align: middle;
+}
+header form {
+	flex-grow: 5;
+	margin-left: 20px;
+	display: flex;
+	max-width: 700px;
+}
+header form input {
+	border: 1px solid #ddd;
+	border-right: 0;
+	padding: 0 10px;
+	flex-grow: 10;
+}
+header form button {
+	border-radius: 0 3px 3px 0;
+	border: 1px solid #ddd;
+	background-color: #f7f7f7;
+	flex-basis: 40px; 
+	flex-grow: 1;
+}
+header form button:hover {
+	background-color: #f1f1f1;
+}
+header .space {
+	flex-basis: 10px;
+	flex-grow: 1;
+}
+header a {
+	color: inherit;
+}
+a.sign-in {
+	float: right;
+	padding: 10px;
+	background-color: #4da6ff;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 80%;
+}
+a.sign-in:hover {
+	background-color: #0033cc;
+	color: #fff;
+}
+a.add-video {
+	float: right;
+	margin: 5px 20px 0 0;
+}
+
+/* wrap ------------------------------------------*/
+
+.wrap {
+	width: 1300px;
+	margin: 0 auto;
+	padding-top: 60px;
+	overflow: auto;
+}
+
+/* content -----------------------------------------*/
+
+.content {
+	width: 853px;
+	margin: 10px 0 50px 0;
+}
+.title, .publish, .comments {
+	background-color: #fff;
+	margin-top: 10px;
+	padding: 10px;
+	color: #333333;
+	font-size: 80%;
+}
+.title h1 {
+	font-size: 150%;
+}
+.title-main {
+	overflow: auto;
+	margin-top: 10px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+.title-views {
+	float: right;
+}
+.title-img {
+	float: left;
+}
+.title-author {
+	float: left;
+	margin-left: 10px;
+}
+.title h2, .publish h2, .comments h2 {
+	font-weight: bold;
+	margin-top: 10px;
+}
+.title-subscribe {
+	display: flex;
+	margin-top: 10px;
+}
+.subscribe {
+	background: #ff0000;
+	color: #fff;
+	padding: 5px 10px;
+}
+.subscribe:hover {
+	background: #CC181E;
+	color: #fff;
+}
+.subscribers {
+	border: 1px solid #ddd;
+	background-color: #f7f7f7;
+	border-left: 0;
+	padding: 5px;
+}
+.title-views {
+	font-size: 150%;
+	color: #a6a6a6;
+	padding-top: 40px;
+}
+.title-footer {
+	overflow: auto;
+	padding: 10px 0;
+}
+a.dislike, a.like {
+	float: right;
+	color: #a6a6a6;
+	margin-left: 20px;
+}
+a.add, a.share, a.more {
+	float: left;
+	margin-right: 20px;
+	color: #a6a6a6;
+}
+.title-footer span {
+	font-size: 150%;
+	vertical-align: middle;
+}
+.publish-more {
+	text-transform: uppercase;
+	text-align: center;
+	border-top: 1px solid #ddd;
+	padding-top: 10px;
+}
+.publish p {
+	padding: 5px 0 15px 0;
+}
+.publish-more a {
+	color: #a6a6a6;
+	font-size: 80%;
+}
+.publish-more a:hover {
+	color: #333333;
+}
+
+/* comments ------------------------------------------*/
+
+.add-comment {
+	display: flex;
+	margin-top: 10px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+}
+.add-comment textarea {
+	flex-grow: 1;
+	color: #ddd;
+	border: 1px solid #ddd;
+	margin-left: 20px;
+	padding: 10px;
+}
+.add-comment textarea:focus {
+	color: #333;
+}
+.popular a{
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	background-color: #f7f7f7;
+	border-radius: 3px;
+	color: #333333;
+	font-size: 80%;
+	margin: 20px 0;
+}
+.popular a:hover {
+	background-color: #f1f1f1;
+}
+.comment {
+	display: flex;
+	margin-bottom: 30px;
+}
+.comment-main {
+	margin-left: 10px;
+}
+.name a {
+	color: #4da6ff;
+	font-weight: bold;
+	font-size: 95%;
+}
+.name span {
+	font-size: 85%;
+}
+.comment-text {
+	margin: 10px 0;
+}
+a.answer {
+	color: #aaa;
+}
+.name a:hover, a.answer:hover {
+	color: #333;
+}
+.answers {
+	color: #4da6ff;
+}
+a.vote {
+	color: inherit;
+	font-size: 120%;
+}
+a.vote:hover {
+	color: #aaa;
+}
+.more-comment a {
+	display: block;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	border: 1px solid #ddd;
+	background-color: #f7f7f7;
+	border-radius: 3px;
+	color: #333333;
+	font-size: 90%;
+	font-weight: bold;
+}
+.more-comment a:hover {
+	background-color: #f1f1f1;
+}
+
+/* aside -------------------------------------------*/
+
+aside {
+	width: 437px;
+	margin: 10px 0 10px 10px;
+	background-color: white;
+	float: right;
+	overflow: auto;
+	padding: 10px;
+}
+.aside-header {
+	padding: 5px 0;
+}
+.aside-header span.glyphicon {
+	float: right;
+}
+.aside-header .next {
+	font-size: 90%;
+	font-weight: bold;
+	color: #333333;
+}
+.aside-header .auto {
+	float: right;
+	margin-right: 10px;
+	font-size: 90%;
+}
+.preview {
+	overflow: auto;
+	margin-bottom: 15px;
+}
+.preview img {
+	float: left;
+	margin-right: 10px;
+}
+.preview h2 {
+	padding: 10px 0;
+}
+.preview a {
+	color: #333333;
+}
+.preview a:hover {
+	color: #4da6ff;
+}
+.author, .views {
+	font-size: 70%;
+}
+.author {
+	margin-bottom: 5px;
+}
+.preview:nth-child(2) {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 15px;
+}
+.aside-footer {
+	border-top: 1px solid #ddd;
+	padding-top: 10px;
+	text-align: center;
+}
+.aside-footer a {
+	color: inherit;
+}
+.aside-footer a:hover {
+	color: #333333;
+}
+
+/* footer -----------------------------------------*/
+
+footer {
+	padding: 10px 30px 30px 30px;
+	background-color: #fff;
+	width: 100%;
+	min-width: 1300px;
+}
+.buttons {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ddd;
+}
+a.footer-button {
+	display: inline-block;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border: 1px solid #ddd;
+	background-color: #f7f7f7;
+	border-radius: 3px;
+	font-size: 70%;
+	color: #333333;
+}
+a.footer-button:hover {
+	background-color: #f1f1f1;
+}
+footer img {
+	vertical-align: top;
+}
+.nav1 {
+	margin-top: 15px;
+}
+.nav2 {
+	margin-top: 10px;
+}
+.nav1 a {
+	font-size: 80%;
+	color: #333333;
+	font-weight: bold;
+	margin-right: 20px;
+}
+.nav1 a:hover {
+	color: #4da6ff;
+}
+.nav2 a {
+	font-size: 70%;
+	color: inherit;
+	font-weight: bold;
+	margin-right: 20px;
+}
+.nav2 a:hover {
+	color: #4da6ff;
+}
